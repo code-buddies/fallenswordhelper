@@ -93,7 +93,7 @@ export default defineConfig(({ command, mode }) => {
       },
       cssCodeSplit: false,
       sourcemap: true,
-      minify: ctx.isProd ? 'terser' : false,
+      minify: ctx.isProd ? 'oxc' : false,
       rollupOptions: {
         output: {
           chunkFileNames: `${calfVer}/[name]-[hash].js`,
